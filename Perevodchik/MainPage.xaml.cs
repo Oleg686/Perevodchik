@@ -10,15 +10,16 @@ using Xamarin.Forms;
 
 namespace Perevodchik
 {
-    public static class GlobalVariables
-    {
-        public static WebClient client = new WebClient();
-        public static var xml = client.DownloadString("https://www.cbr-xml-daily.ru/daily.xml");
-        public static XDocument xdoc = XDocument.Parse(xml);
-        public static var el = xdoc.Element("ValCurs").Elements("Valute");
-        public static string dollar = el.Where(x => x.Attribute("ID").Value == "R01235").Select(x => x.Element("Value").Value).FirstOrDefault();
-        public static string eur = el.Where(x => x.Attribute("ID").Value == "R01239").Select(x => x.Element("Value").Value).FirstOrDefault();
-    }
+    // Доработать перевод из долларов/евро в рубли по текущему курсу.
+    //public static class GlobalVariables
+    //{
+    //    public static WebClient client = new WebClient();
+    //    public static var xml = client.DownloadString("https://www.cbr-xml-daily.ru/daily.xml");
+    //    public static XDocument xdoc = XDocument.Parse(xml);
+    //    public static var el = xdoc.Element("ValCurs").Elements("Valute");
+    //    public static string dollar = el.Where(x => x.Attribute("ID").Value == "R01235").Select(x => x.Element("Value").Value).FirstOrDefault();
+    //    public static string eur = el.Where(x => x.Attribute("ID").Value == "R01239").Select(x => x.Element("Value").Value).FirstOrDefault();
+    //}
     [DesignTimeVisible(false)]
     public partial class MainPage : ContentPage
     {

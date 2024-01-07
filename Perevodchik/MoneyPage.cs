@@ -18,8 +18,8 @@ namespace Perevodchik
             dol.FontSize = 25;
             euro.TextColor = Color.Black;
             euro.FontSize = 25;
-            dol.Text = $"Евро: {GlobalVariables.eur}";
-            euro.Text = $"Доллар: {GlobalVariables.dollar}";
+            //dol.Text = $"Евро: {GlobalVariables.eur}";
+            //euro.Text = $"Доллар: {GlobalVariables.dollar}";
             StackLayout layout = new StackLayout();
             Button first_page = new Button
             {

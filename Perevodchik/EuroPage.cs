@@ -36,9 +36,9 @@ namespace Perevodchik
 
         private void BTN_Clicked(object sender, EventArgs e)
         {
-            res.Text = GlobalVariables.eur;
-            double result = double.Parse(res.Text.Replace(',', '.'));
-            res.Text = "Евро: " + Convert.ToString(Math.Round(Convert.ToDouble(field.Text) * result,2));
+            //res.Text = GlobalVariables.eur;
+            //double result = double.Parse(res.Text.Replace(',', '.'));
+            //res.Text = "Евро: " + Convert.ToString(Math.Round(Convert.ToDouble(field.Text) * result,2));
         }
     }
 }

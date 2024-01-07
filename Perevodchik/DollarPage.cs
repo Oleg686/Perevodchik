@@ -38,9 +38,9 @@ namespace Perevodchik
             //XDocument xdoc = XDocument.Parse(xml);
             //var el = xdoc.Element("ValCurs").Elements("Valute");
             //string dollar = el.Where(x => x.Attribute("ID").Value == "R01235").Select(x => x.Element("Value").Value).FirstOrDefault();
-            res.Text = GlobalVariables.dollar;
-            double result = double.Parse(res.Text.Replace(',', '.'));
-            res.Text = "Долларов: " + Convert.ToString(Math.Round(Convert.ToDouble(field.Text) * result, 2));
+            //res.Text = GlobalVariables.dollar;
+            //double result = double.Parse(res.Text.Replace(',', '.'));
+            //res.Text = "Долларов: " + Convert.ToString(Math.Round(Convert.ToDouble(field.Text) * result, 2));
         }
     }
 }
